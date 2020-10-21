@@ -14,7 +14,7 @@ class AD:
 
     def put_queen(self,y):
         """ put a D-stone on the next empty field """
-        if y>7: ## Break Criteria
+        if y>7: ## terminating case
             self.solutions.append(ChessBoard(self.board))
             return None
         else:
@@ -74,7 +74,6 @@ class AD:
         print
         
 class ChessBoard:
-    """ """
     def __init__(self, board):
         self.board=[[],[],[],[],[],[],[],[]]
         for i in range(0,8):
