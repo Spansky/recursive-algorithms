@@ -33,7 +33,7 @@ For the purpose of reusing the factorial function we can define a function for i
 ```python
 def factorial(number :int):
     res = 1
-    for i in range(1,5):
+    for i in range(1,number):
         res *= (i+1)
     return res
 
